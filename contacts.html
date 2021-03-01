@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="title" content="Web Dve Bootcamp Training ">
+    <meta name="description" content="I am learning full-stack  web development">
+    <meta name="keywords" content="HTML, CSS, Javascript, Python, PHP">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Lee Haynes">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/tmp.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Contacts</h1>
+    <section>
+        <article>
+            <div>
+                <ul>
+                    <li>Lee Haynes</li>
+                    <li>test@testmail.com</li>
+                    <li>somesite.com</li>
+                    <li>09887765431</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <hr>
+    <section>
+        <article>
+            <div>
+                <!--
+
+                    method
+                        The HTTP method to submit the form with. Possible (case insensitive) values:
+
+                        post: The POST method; form data sent as the request body.
+                        get: The GET method; form data appended to the action URL with a ? separator. Use this method when the form has no side-effects.
+                        dialog: When the form is inside a <dialog>, closes the dialog on submission.
+
+                        This value is overridden by formmethod attributes on <button>, <input type="submit">, or <input type="image"> elements
+                -->
+                <form action="mailto:LeeHaynes2019@yandex.com" method="post" enctype="text/plain">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" value="name" id="name">
+                    <br>
+                    <!--
+                    <label>Registration Date</label>
+                    <input type="date">
+                    -->
+                    <label for="male">Gender Male:</label>
+                    <input type="radio" name="radio" value="Gender: Male" id="male">
+                    <label for="female">Gender Female: </label>
+                    <input type="radio" name="radio" value="Gender: Female" id="female">
+                    <br>
+                    <label for="message">Your Message</label>
+                    <!--Row Height cols Width -->
+                    <textarea name="messsage" rows="4" cols="35" id="textarea"></textarea>
+                    <br>
+                    <!--
+                    <label for="file">File: </label>
+                    <input type="file">
+                    -->
+                    <label for="email">Email</label>
+                    <input type="email" name="email" value="email" id="email">
+                    <br>
+                    <input type="submit" value="register">
+                    <input type="reset" value="clear">
+                </form>
+            </div>
+        </article>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
